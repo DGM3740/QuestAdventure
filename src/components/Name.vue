@@ -9,7 +9,7 @@
             </form>
             
             <router-link to="/game">
-                <div class="button" @click="changeName(name)">Change Name</div>
+                <div class="button" @click="changeName(name)">ENTER</div>
             </router-link>            
 
         </div>
