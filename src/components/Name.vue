@@ -11,7 +11,7 @@
         <div class="content-container">
             
             <p>What is your character's name?</p>
-            <form action="/game">
+            <form @submit="formEntry(name)">
                 <input type="text" v-model="name" input placeholder="Enter name here...">
             </form>
             
@@ -40,6 +40,10 @@ export default {
         changeName(name) {
             this.$store.dispatch("changeName", name);
         },
+        formEntry(name) {
+            this.$store.dispatch("changeName", name);
+            this.$router.push('/game');
+        }
     }
     
 

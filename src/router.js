@@ -5,6 +5,8 @@ import Character from "./components/Character";
 import Name from "./components/Name";
 import AppGame from "./components/AppGame";
 import bossFight from "./components/bossFight";
+import WinScreen from "./components/WinScreen";
+import LoseScreen from "./components/LoseScreen";
 
 Vue.use(Router);
 
@@ -32,6 +34,16 @@ export default new Router({
 			path: "/game",
 			name: "game",
 			component: AppGame,
+		},
+		{
+			path: "/win-screen",
+			name: "win-screen",
+			component: WinScreen,
+		},
+		{
+			path: "/lose-screen",
+			name: "lose-screen",
+			component: LoseScreen,
 		},
 		{
 			path: "*",
